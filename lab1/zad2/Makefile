@@ -24,7 +24,6 @@ test_static: static
 
 	rm -f raport2.txt
 
-	@echo "~~~~~~~~~~~~~STATIC TEST~~~~~~~~~~~~~~~" >> raport2.txt
 	@echo " " >> raport2.txt
 	@echo "for small files: " >> raport2.txt
 	@echo " " >> raport2.txt
