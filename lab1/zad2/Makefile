@@ -6,7 +6,7 @@ all:
 	static shared
 
 static:
-	$(CC) $(CGLAGS) -c first_library.c -o first_library.o
+	$(CC) $(CFLAGS) -c first_library.c -o first_library.o
 	ar rcs libfirst_library.a first_library.o
 
 shared:

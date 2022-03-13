@@ -1,0 +1,207 @@
+static test: optimalization level: -O0
+ 
+for small files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for medium files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for large files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+static test: optimalization level: -O2
+ 
+for small files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for medium files: 
+ 
+5 blocks, adding and removing:
+real 0.020000
+user 0.000000
+sys  0.000000
+
+for large files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+static test: optimalization level: -O2
+ 
+for small files: 
+ 
+5 blocks, adding and removing:
+real 0.000000
+user 0.000000
+sys  0.000000
+
+for medium files: 
+ 
+5 blocks, adding and removing:
+real 0.000000
+user 0.000000
+sys  0.000000
+
+for large files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+shared test: optimaloization level: -O0
+ 
+for small files: 
+ 
+5 blocks, adding and removing:
+real 0.000000
+user 0.000000
+sys  0.000000
+
+for medium files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for large files: 
+ 
+5 blocks, adding and removing:
+real 0.000000
+user 0.000000
+sys  0.000000
+
+shared test: optimaloization level: -O1
+ 
+for small files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for medium files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for large files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+shared test: optimaloization level: -O2
+ 
+for small files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for medium files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for large files: 
+ 
+5 blocks, adding and removing:
+real 0.020000
+user 0.000000
+sys  0.000000
+
+dynamic test: optimalization level: -O0
+ 
+for small files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for medium files: 
+ 
+5 blocks, adding and removing:
+real 0.020000
+user 0.000000
+sys  0.000000
+
+for large files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+dynamic test: optimalization level: -O1
+ 
+for small files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for medium files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for large files: 
+ 
+5 blocks, adding and removing:
+real 0.000000
+user 0.000000
+sys  0.000000
+
+dynamic test: optimalization level: -O2
+ 
+for small files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for medium files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
+for large files: 
+ 
+5 blocks, adding and removing:
+real 0.010000
+user 0.000000
+sys  0.000000
+
