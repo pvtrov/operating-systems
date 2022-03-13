@@ -14,7 +14,7 @@ struct PointersMatrix{
 };
 
 struct MemoryBlock{
-    char content;
+    char* content;
 };
 
 

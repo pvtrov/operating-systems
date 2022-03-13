@@ -39,7 +39,7 @@ int wc_files(char* first, int numberOfFiles, struct PointersMatrix* matrix) {
     long int size = ftell(temp);
     char* almostContent = calloc(size + 1, 1);
     fread(almostContent, 1, size, temp);
-    block -> content = (char) almostContent;
+    block -> content =  almostContent;
     int blockNumber = matrix->lastAddedIndex + 1;
     matrix->blocks[blockNumber] = block;
     matrix->lastAddedIndex = blockNumber; // uaktualniam lastAddedIndex

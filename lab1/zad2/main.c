@@ -27,6 +27,7 @@ int main(int argc, char** argv) {
     struct tms end_tms;
     clock_t clock_start;
     clock_t clock_end;
+    int size;
 
     int command_idx = 1;
 
@@ -35,10 +36,15 @@ int main(int argc, char** argv) {
     clock_start = times(&start_tms);
     while (command_idx < argc) {
         if (strcmp(argv[command_idx], "create_table") == 0) {
-            int size = atoi(argv[command_idx+1]) + 1;
+            size = atoi(argv[command_idx+1]);
+            if (size == 0 ){
+                printf("array must have more than 0 elements :(");
+                exit(4);
+            }
             matrix = create_table(size);
             command_idx += 2;
-        } else if (strcmp(argv[command_idx], "wc_files") == 0) {
+        }
+        else if (strcmp(argv[command_idx], "wc_files") == 0) {
             int counter = 0;
             int cpy = command_idx + 1;
             char first[4000] = "wc ";
@@ -47,16 +53,26 @@ int main(int argc, char** argv) {
                     strcmp(argv[cpy], "wc_files") == 0 ||
                     strcmp(argv[cpy], "remove_block") == 0){
                     break;
-                } else {
+                }
+                else {
                     strcat(first, argv[cpy]);
                     strcat(first, " ");
                     counter ++;
                 }
             }
+            if(counter == 0){
+                printf("there must be at least one file to count :)");
+                exit(1);
+            }
             wc_files(first, counter, matrix);
             command_idx += counter+1;
-        }  else if (strcmp(argv[command_idx], "remove_block") == 0){
+        }
+        else if (strcmp(argv[command_idx], "remove_block") == 0){
             int indexToRemove = atoi(argv[command_idx+1]);
+            if (indexToRemove > size-1){
+                printf("block on this index do not exist");
+                exit(2);
+            }
             remove_block(matrix, indexToRemove);
             command_idx += 2;
         }
