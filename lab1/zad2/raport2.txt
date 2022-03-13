@@ -7,7 +7,7 @@ user 0.000000
 sys  0.000000
 
 4 blocks, 2 files in each block, removing 3 blocks:
-real 0.010000
+real 0.000000
 user 0.000000
 sys  0.000000
 
@@ -29,7 +29,7 @@ user 0.000000
 sys  0.000000
 
 5 blocks, adding and removing:
-real 0.000000
+real 0.010000
 user 0.000000
 sys  0.000000
 
@@ -41,12 +41,12 @@ user 0.000000
 sys  0.000000
 
 4 blocks, 2 files in each block, removing 3 blocks:
-real 0.000000
+real 0.010000
 user 0.000000
 sys  0.000000
 
 5 blocks, adding and removing:
-real 0.000000
+real 0.010000
 user 0.000000
 sys  0.000000
 

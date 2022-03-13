@@ -1,7 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -std=gnu11
 
-
+all:
+		static shared dynamic
 
 static:
 		make -C ../zad2 static
@@ -16,7 +17,7 @@ dynamic:
 clean:
 		make -C ../zad2 clean
 		make -C ../zad2 clean
-		rm -f *.txt temp.txt main.o main
+		rm -f *t.txt temp.txt main.o main
 		make -C ../zad1 clean
 
 
@@ -37,6 +38,7 @@ test: clean
 		make dynamic_report
 
 		rm -rf files temp main
+
 
 dynamic_report:
 		cp /home/mirabelka/CLionProjects/Operating_Systems_Course/lab1/files/*.txt ../zad3a
