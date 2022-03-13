@@ -23,7 +23,7 @@ struct PointersMatrix* create_table(int size){
     matrix -> lastAddedIndex = -1;
     matrix -> size = size;
     matrix -> blocks = calloc(size, sizeof(struct MemoryBlock));
-    printf("Created matrix\n ");
+//    printf("Created matrix\n ");
 
     return matrix;
 }
@@ -34,11 +34,11 @@ int wc_files(char* first, int numberOfFiles, struct PointersMatrix* matrix) {
 
 
     FILE* temp = popen(first, "r");
-    printf("counted things have been written to temporary file\n ");
+//    printf("counted things have been written to temporary file\n ");
 
     fseek(temp, 0, SEEK_END);
     long int size = ftell(temp);
-    char* almostContent = calloc(size + 1, 1);
+    char* almostContent = calloc(size + 3000000, 1);
     fread(almostContent, 1, size, temp);
     block -> content = (char*) almostContent;
     int blockNumber = matrix->lastAddedIndex + 1;
@@ -54,6 +54,6 @@ void remove_block(struct PointersMatrix* matrix, int indexToRemove){
     }
     matrix->blocks[indexToRemove] = NULL;
     free( (void*) matrix->blocks[indexToRemove]);
-    printf("Removed block at %d index\n", indexToRemove);
+//    printf("Removed block at %d index\n", indexToRemove);
 }
 

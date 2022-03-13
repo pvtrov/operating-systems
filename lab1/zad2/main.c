@@ -64,6 +64,10 @@ int main(int argc, char** argv) {
                 printf("there must be at least one file to count :)");
                 exit(1);
             }
+            if(matrix == NULL){
+                printf("you should create pointers matrix first!");
+                exit(3);
+            }
             wc_files(first, counter, matrix);
             command_idx += counter+1;
         }
@@ -75,6 +79,9 @@ int main(int argc, char** argv) {
             }
             remove_block(matrix, indexToRemove);
             command_idx += 2;
+        }else{
+            printf("sorry, unknown command, try again with another one");
+            exit(4);
         }
     }
     clock_end = times(&end_tms);
