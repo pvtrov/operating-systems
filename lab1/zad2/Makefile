@@ -25,12 +25,39 @@ test_static: static
 	rm -f raport2.txt
 
 	@echo "~~~~~~~~~~~~~STATIC TEST~~~~~~~~~~~~~~~" >> raport2.txt
+	@echo " " >> raport2.txt
+	@echo "for small files: " >> raport2.txt
+	@echo " " >> raport2.txt
 
-	@echo "   2 blocks, 2 files: [medium] [small]: " >> raport2.txt
-	./main create_table 2 wc_files medium1t.txt wc_files small0t.txt  >> raport2.txt
+	@echo "2 blocks, [2 files] [1 file]:" >> raport2.txt
+	./main create_table 2 wc_files small0t.txt small1t.txt wc_files small2t.txt >> raport2.txt
 
-	@echo "   4 blocks: [medium, medium] [small, large] [large medium] [small, small], removing 2 blocks: " >> raport2.txt
-	./main create_table 4 wc_files medium1t.txt medium2t.txt wc_files small0t.txt large0t.txt wc_files large2t.txt medium1t.txt wc_files small0t.txt small1t.txt remove_block 0 remove_block 1 >> raport2.txt
+	@echo "4 blocks, 2 files in each block, removing 3 blocks:" >> raport2.txt
+	./main create_table 4 wc_files small1t.txt small2t.txt wc_files small1t.txt small2t.txt wc_files small1t.txt small2t.txt wc_files small1t.txt small2t.txt remove_block 0 remove_block 1 remove_block 2 >> raport2.txt
 
-	@echo "   5 blocks, adding and removing:" >> raport2.txt
-	./main create_table 5 wc_files medium1t.txt remove_block 0 wc_files small0t.txt remove_block 1 wc_files medium1t.txt small0t.txt remove_block 2 wc_files medium1t.txt remove_block 3 wc_files small1t.txt remove_block 4 >> raport2.txt
+	@echo "5 blocks, adding and removing:" >> raport2.txt
+	./main create_table 6 wc_files small1t.txt small2t.txt remove_block 0 wc_files small1t.txt small2t.txt remove_block 1 wc_files small1t.txt small2t.txt remove_block 2 wc_files small1t.txt small2t.txt remove_block 3 wc_files small1t.txt small2t.txt remove_block 4 >> raport2.txt
+
+	@echo "for medium files: " >> raport2.txt
+	@echo " " >> raport2.txt
+
+	@echo "2 blocks, [2 files] [1 file]:" >> raport2.txt
+	./main create_table 2 wc_files medium0t.txt medium1t.txt wc_files medium2t.txt >> raport2.txt
+
+	@echo "4 blocks, 2 files in each block, removing 3 blocks:" >> raport2.txt
+	./main create_table 4 wc_files medium1t.txt medium2t.txt wc_files medium1t.txt medium2t.txt wc_files medium1t.txt medium2t.txt wc_files medium1t.txt medium2t.txt remove_block 0 remove_block 1 remove_block 2 >> raport2.txt
+
+	@echo "5 blocks, adding and removing:" >> raport2.txt
+	./main create_table 6 wc_files medium1t.txt medium2t.txt remove_block 0 wc_files medium1t.txt medium2t.txt remove_block 1 wc_files medium1t.txt medium2t.txt remove_block 2 wc_files medium1t.txt medium2t.txt remove_block 3 wc_files medium1t.txt medium2t.txt remove_block 4 >> raport2.txt
+
+	@echo "for large files: " >> raport2.txt
+	@echo " " >> raport2.txt
+
+	@echo "2 blocks, [2 files] [1 file]:" >> raport2.txt
+	./main create_table 2 wc_files large0t.txt large1t.txt wc_files large2t.txt >> raport2.txt
+
+	@echo "4 blocks, 2 files in each block, removing 3 blocks:" >> raport2.txt
+	./main create_table 4 wc_files large1t.txt large2t.txt wc_files large1t.txt large2t.txt wc_files large1t.txt large2t.txt wc_files large1t.txt large2t.txt remove_block 0 remove_block 1 remove_block 2 >> raport2.txt
+
+	@echo "5 blocks, adding and removing:" >> raport2.txt
+	./main create_table 6 wc_files large1t.txt large2t.txt remove_block 0 wc_files large1t.txt large2t.txt remove_block 1 wc_files large1t.txt large2t.txt remove_block 2 wc_files large1t.txt large2t.txt remove_block 3 wc_files large1t.txt large2t.txt remove_block 4 >> raport2.txt
