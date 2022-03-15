@@ -3,7 +3,8 @@ CFLAGS = -Wall -g
 DIR := ${CURDIR}
 
 all:
-	static shared
+	make static
+	make shared
 
 static:
 	$(CC) $(CFLAGS) -c first_library.c -o first_library.o

@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -std=gnu11
 
 all:
-		static shared dynamic
+		make test
 
 static:
 		make -C ../zad2 static
