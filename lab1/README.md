@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/74711051/158084630-617aab40-50e4-4242-bcd7-117f908e0e6f.png)
+
 
 # Zadanie 1. Alokacja tablicy ze wskaźnikami na bloki pamięci zawierające znaki (25%)
 
