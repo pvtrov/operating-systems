@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -g
 
 all:
-	static shared
+	make static shared
 
 static:
 	$(CC) $(CGLAGS) -c first_library.c -o first_library.o
