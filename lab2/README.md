@@ -18,7 +18,7 @@ Dla obu wariantów implementacji należy przeprowadzić pomiar czasu wykonywania
 Napisz program, który będzie przeglądał katalog podany jako argument i kolejno wszystkie jego podkatalogi. 
 Program ma wypisać na standardowe wyjście następujące informacje o znalezionych plikach:
 
-Ścieżka bezwzględna pliku,
+0. Ścieżka bezwzględna pliku,
 1. Liczbę dowiązań,
 2. Rodzaj pliku (zwykły plik - file, katalog - dir, urządzenie znakowe - char dev, urządzenie blokowe - block dev, potok nazwany - fifo, link symboliczny - slink, soket - sock),
 3. Rozmiar w bajtach,
