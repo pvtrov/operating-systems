@@ -81,6 +81,8 @@ void sysCopying (char* firstFileName, char* secondFileName){
             write(fileTo, &ch, sizeof(char));
         }
     }
+    close(fileTo);
+    close(fileFrom);
 
 }
 
