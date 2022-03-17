@@ -19,12 +19,12 @@ Napisz program, który będzie przeglądał katalog podany jako argument i kolej
 Program ma wypisać na standardowe wyjście następujące informacje o znalezionych plikach:
 
 Ścieżka bezwzględna pliku,
-Liczbę dowiązań,
-Rodzaj pliku (zwykły plik - file, katalog - dir, urządzenie znakowe - char dev, urządzenie blokowe - block dev, potok nazwany - fifo, link symboliczny - slink, soket - sock),
-Rozmiar w bajtach,
-Datę ostatniego dostępu,
-Datę ostatniej modyfikacji.
-Na koniec ma wypisać na standardowe wyjście informacje o liczbach plików poszczególnych rodzajów, zawartych w tym katalogu i wszystkich jego podkatalogach. Powinny zostać zliczone: zwykłe pliki, katalogi, pliki specjalne znakowe, pliki specjalne blokowe, potoki/kolejki FIFO, linki symboliczne i sokety. 
+1. Liczbę dowiązań,
+2. Rodzaj pliku (zwykły plik - file, katalog - dir, urządzenie znakowe - char dev, urządzenie blokowe - block dev, potok nazwany - fifo, link symboliczny - slink, soket - sock),
+3. Rozmiar w bajtach,
+4. Datę ostatniego dostępu,
+5. Datę ostatniej modyfikacji.
+6. Na koniec ma wypisać na standardowe wyjście informacje o liczbach plików poszczególnych rodzajów, zawartych w tym katalogu i wszystkich jego podkatalogach. Powinny zostać zliczone: zwykłe pliki, katalogi, pliki specjalne znakowe, pliki specjalne blokowe, potoki/kolejki FIFO, linki symboliczne i sokety. 
 
 Ścieżka podana jako argument wywołania może być względna lub bezwzględna. Program nie powinien podążać za dowiązaniami symbolicznymi do katalogów.
 
