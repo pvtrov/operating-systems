@@ -3,7 +3,7 @@ CFLAGS = -Wall -g
 
 all:
 	make run
-	make clean
+
 
 run:
 	$(CC) $(CFLAGS) main3_2.c -o main3_2

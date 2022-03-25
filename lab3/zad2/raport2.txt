@@ -11,7 +11,7 @@ for rectangle width: 0.000000001 and 9 processes:
 result: 3.250645
 rectangle width: 0.000000
 number of processes: 9
-real 0.940000
+real 0.890000
 user 0.000000
 sys  0.000000
 
