@@ -1,0 +1,204 @@
+for n = 3: 
+main program PID: 40622
+Parent number 0 : Parent's PID: 40622
+Parent number 0: Child's PID: 40623
+Parent number 1 : Parent's PID: 40622
+Parent number 1: Child's PID: 40624
+Parent number 2 : Parent's PID: 40622
+Parent number 2: Child's PID: 40625
+main program PID: 40622
+Parent number 0 : Parent's PID: 40622
+Parent number 0: Child's PID: 40623
+Parent number 1 : Parent's PID: 40622
+Parent number 1: Child's PID: 40624
+Child number 3 : Parent's PID: 40622
+Child number 3: Child's PID: 40625
+main program PID: 40622
+Parent number 0 : Parent's PID: 40622
+Parent number 0: Child's PID: 40623
+Child number 2 : Parent's PID: 40622
+Child number 2: Child's PID: 40624
+Child number 3 : Parent's PID: 40624
+Child number 3: Child's PID: 40627
+main program PID: 40622
+Parent number 0 : Parent's PID: 40622
+Parent number 0: Child's PID: 40623
+Child number 2 : Parent's PID: 40622
+Child number 2: Child's PID: 40624
+Parent number 2 : Parent's PID: 40624
+Parent number 2: Child's PID: 40627
+main program PID: 40622
+Child number 1 : Parent's PID: 40622
+Child number 1: Child's PID: 40623
+Parent number 1 : Parent's PID: 40623
+Parent number 1: Child's PID: 40626
+Child number 3 : Parent's PID: 40623
+Child number 3: Child's PID: 40628
+main program PID: 40622
+Child number 1 : Parent's PID: 40622
+Child number 1: Child's PID: 40623
+Parent number 1 : Parent's PID: 40623
+Parent number 1: Child's PID: 40626
+Parent number 2 : Parent's PID: 40623
+Parent number 2: Child's PID: 40628
+main program PID: 40622
+Child number 1 : Parent's PID: 40622
+Child number 1: Child's PID: 40623
+Child number 2 : Parent's PID: 40623
+Child number 2: Child's PID: 40626
+Parent number 2 : Parent's PID: 40626
+Parent number 2: Child's PID: 40629
+main program PID: 40622
+Child number 1 : Parent's PID: 40622
+Child number 1: Child's PID: 40623
+Child number 2 : Parent's PID: 40623
+Child number 2: Child's PID: 40626
+Child number 3 : Parent's PID: 40626
+Child number 3: Child's PID: 40629
+
+for n = 4: 
+main program PID: 40639
+Parent number 0 : Parent's PID: 40639
+Parent number 0: Child's PID: 40640
+Parent number 1 : Parent's PID: 40639
+Parent number 1: Child's PID: 40641
+Parent number 2 : Parent's PID: 40639
+Parent number 2: Child's PID: 40642
+Parent number 3 : Parent's PID: 40639
+Parent number 3: Child's PID: 40644
+main program PID: 40639
+Parent number 0 : Parent's PID: 40639
+Parent number 0: Child's PID: 40640
+Parent number 1 : Parent's PID: 40639
+Parent number 1: Child's PID: 40641
+Parent number 2 : Parent's PID: 40639
+Parent number 2: Child's PID: 40642
+Child number 4 : Parent's PID: 40639
+Child number 4: Child's PID: 40644
+main program PID: 40639
+Parent number 0 : Parent's PID: 40639
+Parent number 0: Child's PID: 40640
+Child number 2 : Parent's PID: 40639
+Child number 2: Child's PID: 40641
+Parent number 2 : Parent's PID: 40641
+Parent number 2: Child's PID: 40645
+Parent number 3 : Parent's PID: 40641
+Parent number 3: Child's PID: 40646
+main program PID: 40639
+Parent number 0 : Parent's PID: 40639
+Parent number 0: Child's PID: 40640
+Child number 2 : Parent's PID: 40639
+Child number 2: Child's PID: 40641
+Child number 3 : Parent's PID: 40641
+Child number 3: Child's PID: 40645
+Parent number 3 : Parent's PID: 40645
+Parent number 3: Child's PID: 40648
+main program PID: 40639
+Parent number 0 : Parent's PID: 40639
+Parent number 0: Child's PID: 40640
+Parent number 1 : Parent's PID: 40639
+Parent number 1: Child's PID: 40641
+Child number 3 : Parent's PID: 40639
+Child number 3: Child's PID: 40642
+Parent number 3 : Parent's PID: 40642
+Parent number 3: Child's PID: 40647
+main program PID: 40639
+Parent number 0 : Parent's PID: 40639
+Parent number 0: Child's PID: 40640
+Child number 2 : Parent's PID: 40639
+Child number 2: Child's PID: 40641
+Child number 3 : Parent's PID: 40641
+Child number 3: Child's PID: 40645
+Child number 4 : Parent's PID: 1
+Child number 4: Child's PID: 40648
+main program PID: 40639
+Parent number 0 : Parent's PID: 40639
+Parent number 0: Child's PID: 40640
+Child number 2 : Parent's PID: 40639
+Child number 2: Child's PID: 40641
+Parent number 2 : Parent's PID: 40641
+Parent number 2: Child's PID: 40645
+Child number 4 : Parent's PID: 1
+Child number 4: Child's PID: 40646
+main program PID: 40639
+Child number 1 : Parent's PID: 40639
+Child number 1: Child's PID: 40640
+Child number 2 : Parent's PID: 40640
+Child number 2: Child's PID: 40643
+Parent number 2 : Parent's PID: 40643
+Parent number 2: Child's PID: 40649
+Parent number 3 : Parent's PID: 40643
+Parent number 3: Child's PID: 40651
+main program PID: 40639
+Parent number 0 : Parent's PID: 40639
+Parent number 0: Child's PID: 40640
+Parent number 1 : Parent's PID: 40639
+Parent number 1: Child's PID: 40641
+Child number 3 : Parent's PID: 40639
+Child number 3: Child's PID: 40642
+Child number 4 : Parent's PID: 1
+Child number 4: Child's PID: 40647
+main program PID: 40639
+Child number 1 : Parent's PID: 40639
+Child number 1: Child's PID: 40640
+Parent number 1 : Parent's PID: 40640
+Parent number 1: Child's PID: 40643
+Parent number 2 : Parent's PID: 40640
+Parent number 2: Child's PID: 40650
+Parent number 3 : Parent's PID: 40640
+Parent number 3: Child's PID: 40653
+main program PID: 40639
+Child number 1 : Parent's PID: 40639
+Child number 1: Child's PID: 40640
+Child number 2 : Parent's PID: 40640
+Child number 2: Child's PID: 40643
+Parent number 2 : Parent's PID: 40643
+Parent number 2: Child's PID: 40649
+Child number 4 : Parent's PID: 40643
+Child number 4: Child's PID: 40651
+main program PID: 40639
+Child number 1 : Parent's PID: 40639
+Child number 1: Child's PID: 40640
+Parent number 1 : Parent's PID: 40640
+Parent number 1: Child's PID: 40643
+Parent number 2 : Parent's PID: 40640
+Parent number 2: Child's PID: 40650
+Child number 4 : Parent's PID: 1
+Child number 4: Child's PID: 40653
+
+main program PID: 40639
+Child number 1 : Parent's PID: 40639
+Child number 1: Child's PID: 40640
+Parent number 1 : Parent's PID: 40640
+Parent number 1: Child's PID: 40643
+Child number 3 : Parent's PID: 1
+Child number 3: Child's PID: 40650
+Parent number 3 : Parent's PID: 40650
+Parent number 3: Child's PID: 40654
+main program PID: 40639
+Child number 1 : Parent's PID: 40639
+Child number 1: Child's PID: 40640
+Child number 2 : Parent's PID: 40640
+Child number 2: Child's PID: 40643
+Child number 3 : Parent's PID: 1
+Child number 3: Child's PID: 40649
+Parent number 3 : Parent's PID: 40649
+Parent number 3: Child's PID: 40655
+main program PID: 40639
+Child number 1 : Parent's PID: 40639
+Child number 1: Child's PID: 40640
+Parent number 1 : Parent's PID: 40640
+Parent number 1: Child's PID: 40643
+Child number 3 : Parent's PID: 1
+Child number 3: Child's PID: 40650
+Child number 4 : Parent's PID: 40650
+Child number 4: Child's PID: 40654
+main program PID: 40639
+Child number 1 : Parent's PID: 40639
+Child number 1: Child's PID: 40640
+Child number 2 : Parent's PID: 40640
+Child number 2: Child's PID: 40643
+Child number 3 : Parent's PID: 1
+Child number 3: Child's PID: 40649
+Child number 4 : Parent's PID: 40649
+Child number 4: Child's PID: 40655
