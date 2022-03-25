@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/74711051/159470326-6dcfe24e-1675-4681-890a-e875b89f0908.png)
+
+
 W zadaniach 1-2 proszę skorzystać z obu wariantów implementacji:
 
 
