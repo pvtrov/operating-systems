@@ -13,7 +13,6 @@ clean:
 	rm -rf a.out
 
 test:
-	@echo "in test find "kotek"" >> raport3.txt
 	make run
-	./main3_3 testDir kotek 4 >> raport3.txt
+	./main3_3 testDir kotek 4
 	make clean
