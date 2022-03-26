@@ -19,17 +19,17 @@ int goInside(char* path, char* wordToFind, char* dirName){
     size_t line;
     buffer = (char *) malloc(bufferSize * sizeof(char));
     line = getline(&buffer, &bufferSize, file);
-    if (strcmp(buffer, wordToFind) == 0);{
+    if (strstr(buffer, wordToFind) != NULL){
         printf("PID: %d, path: %s\n", getpid(), dirName);
     }
-    free(buffer);
     fclose(file);
+    free(buffer);
     return 0;
 }
 
 
 void ransackFile(char* dirName, char* wordToFind, int depth, int currentDepth){
-    char* path = calloc(1000, sizeof(char));
+    char* path = calloc(sizeof(char), 1000);
     int directories = 0;
     struct dirent *dirent;
     DIR *dir = opendir(dirName);
@@ -40,21 +40,25 @@ void ransackFile(char* dirName, char* wordToFind, int depth, int currentDepth){
     }
 
     while((dirent = readdir(dir)) != NULL){
-        type = dirent->d_type;
-        if (type == DT_DIR){
-            directories ++;
-        }
-        if (type == DT_REG){
-            sprintf(path, "%s%s", dirName, dirent->d_name);
-            char* result = realpath(path, NULL);
+        if (strcmp(dirent->d_name, ".") != 0 && strcmp(dirent->d_name, "..") != 0){
+            type = dirent->d_type;
+            char buf[PATH_MAX];
+            if (type == DT_DIR){
+                directories ++;
+            }
+            if (type == DT_REG){
+                sprintf(path, "%s/%s", dirName, dirent->d_name);
+                char* result = realpath(path, NULL);
 
-            goInside(result, wordToFind, path);
+                goInside(path, wordToFind, path);
+                free(result);
+            }
         }
     }
     free(path);
     closedir(dir);
 
-    if (currentDepth <= depth){
+    if (currentDepth < depth){
         pid_t* kids = calloc(sizeof(pid_t), directories);
         int index = 0;
         pid_t kid;
@@ -62,18 +66,21 @@ void ransackFile(char* dirName, char* wordToFind, int depth, int currentDepth){
         if (dir == NULL){
             return;
         }
-        while((dirent = readdir(dir) != NULL)){
-            if (dirent->d_type == DT_DIR){
-                kid = fork();
-                if (kid != 0){
-                    kids[index] = kid;
-                }
-                else{
-                    char* pathSnd = calloc(sizeof(char), 10000);
-                    sprintf(pathSnd, "%s%s", dirName, dirent->d_name);
-                    ransackFile(pathSnd, wordToFind, depth, currentDepth++);
-                    free(pathSnd);
-                    break;
+        struct dirent *dirent2;
+        while((dirent2 = readdir(dir) != NULL)){
+            if (strcmp(dirent2->d_name, ".") != 0 && strcmp(dirent2->d_name, "..") != 0){
+                if (dirent2->d_type == DT_DIR){
+                    kid = fork();
+                    if (kid != 0){
+                        kids[index] = kid;
+                    }
+                    else{
+                        char* pathSnd = calloc(sizeof(char), strlen(dirent->d_name)+2 + strlen(dirName));
+                        sprintf(pathSnd, "%s/%s", dirName, dirent->d_name);
+                        ransackFile(pathSnd, wordToFind, depth, currentDepth++);
+                        free(pathSnd);
+                        break;
+                    }
                 }
             }
         }
