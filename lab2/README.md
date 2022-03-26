@@ -35,3 +35,8 @@ Program należy zaimplementować w dwóch wariantach:
 
 Korzystając z funkcji opendir(), readdir() oraz funkcji z rodziny stat (25%)
 Korzystając z funkcji nftw() (25%)
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74711051/160240616-2d23f98b-21d5-43f2-8b8a-dc81bcaeb227.png" />
+</p>
