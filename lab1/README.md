@@ -53,5 +53,6 @@ Wygenerowane pliki z raportami załącz jako element rozwiązania.
 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74711051/160240373-3903d8bf-f4e6-4e7a-bf41-77eddf4825f7.png" />
+  <img src="https://user-images.githubusercontent.com/74711051/160240373-3903d8bf-f4e6-4e7a-bf41-77eddf4825f7.png" width="500"/>
+
 </p>
