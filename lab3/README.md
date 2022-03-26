@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/74711051/160236066-360707a8-fa43-412f-8675-eadb24f6e6f7.png)
 
-  < dużo czasu zeszło na jebany SEGMENTATION FAULT: 139, poza tym zestaw gituwa >
+  < dużo czasu zeszło na SEGMENTATION FAULT: 139, poza tym zestaw gituwa >
 
 # Tworzenie procesów. Środowisko procesu, sterowanie procesami.
 
