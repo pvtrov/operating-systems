@@ -16,3 +16,8 @@ Napisz program, który liczy numerycznie wartość całki oznaczonej z funkcji 4
 
 ## Zadanie 3 (40%)
 Napisz program, który rozpoczynając od katalogu podanego jako pierwszy parametr uruchomienia, idąc w głąb drzewa katalogów, znajdzie pliki zawierające łańcuch podany jako drugi parametr uruchomienia programu. Przeszukiwanie każdego z podkatalogów powinno odbyć się w osobnym procesie potomnym. Wydruk wyniku wyszukiwania poprzedź wypisaniem ścieżki względnej od katalogu podanego jako argument uruchomienia oraz numeru PID procesu odpowiedzialnego za przeglądanie określonego (pod)katalogu. Przeszukiwanie powinno obejmować pliki tekstowe i pomijać pliki binarne/wykonywalne/obiektowe etc. Program jako trzeci parametr powinien przyjmować maksymalną głębokość przeszukiwania licząc od katalogu podanego jako pierwszy parametr.
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74711051/160240797-cf30be65-cfb2-41b9-8145-0b679165d262.png" width="500" />
+</p>
