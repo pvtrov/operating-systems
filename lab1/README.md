@@ -50,3 +50,9 @@ Wyniki pomiarów zbierz w pliku results3a.txt. Otrzymane wyniki krótko skomentu
 * (25%) Rozszerz plik Makefile z punktu 3a) dodając możliwość skompilowania programu na trzech różnych  poziomach optymalizacji — -O0…-Os. Przeprowadź ponownie pomiary, kompilując i uruchamiając program dla różnych poziomów optymalizacji.
 Wyniki pomiarów dodaj do pliku results3b.txt. Otrzymane wyniki krótko skomentuj.
 Wygenerowane pliki z raportami załącz jako element rozwiązania.
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74711051/160240373-3903d8bf-f4e6-4e7a-bf41-77eddf4825f7.png" width="500"/>
+
+</p>
