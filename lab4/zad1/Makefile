@@ -55,11 +55,6 @@ test:
 	./main4_1 ignore >> raport2.txt
 	@echo "" >> raport2.txt
 
-	@echo "~~~~HANDLER TEST~~~~~~" >> raport2.txt
-	make run_exec
-	./main4_1 handler >> raport2.txt
-	@echo "" >> raport2.txt
-
 	@echo "~~~~~~MASK TEST~~~~~~ " >> raport2.txt
 	make run_exec
 	./main4_1 mask >> raport2.txt
