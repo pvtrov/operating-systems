@@ -19,3 +19,5 @@ test:
 
 	make run
 	./main4_2 >> raport2.txt
+
+	make clean
