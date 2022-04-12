@@ -153,4 +153,5 @@ int main(int argc, char* argv[]){
         exit(1);
     }
     create_commands(file_to_read_from);
+    printf("WSZYSTKO OK \n");
 }
