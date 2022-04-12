@@ -70,3 +70,8 @@ Uwagi:
 1. Ponieważ, w tym przypadku kilka procesów będzie zapisywać do jednego, wspólnego pliku, dlatego należy użyć funkcji flock()
 2. Należy napisać program lub skrypt sprawdzający, czy zawartość pliku wejściowego, w całości, pojawiła się w odpowiedniej linii pliku wynikowego
 3. Uruchamianie powyższych przypadków testowych oraz programu/skryptu sprawdzającego  ma się odbywać za pomocą komendy make test
+
+ 
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/74711051/162958559-7c2bdba7-ce8e-45e2-b35a-206834788cea.png" width="400" />
+</p>
