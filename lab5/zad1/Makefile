@@ -12,7 +12,6 @@ clean:
 	rm -rf main5_1
 
 test:
-
 	make run
 	./main5_1 commands.txt
 

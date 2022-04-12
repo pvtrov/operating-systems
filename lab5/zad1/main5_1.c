@@ -76,10 +76,12 @@ void create_commands(FILE* file){
     while (fgets(line, 256* sizeof(char), file)){
         if (strstr(line, "=")){
             char* better_line = calloc(256, sizeof(char));
+            char* even_better_line = calloc(256, sizeof(char));
             char* token = strtok(line, "=");
             token = strtok(NULL,"=");
             better_line = strncpy(better_line, token, strlen(token)-1);
-            lines[counter] = better_line;
+            even_better_line = separate(better_line);
+            lines[counter] = even_better_line;
             counter ++;
         } else {
             lines_wanted_to_do = get_lines(line);
@@ -87,7 +89,6 @@ void create_commands(FILE* file){
             while (lines_wanted_to_do[i] != -1){
                 int num = lines_wanted_to_do[i];
                 char* this_one_line = lines[num];
-                this_one_line = separate(this_one_line);
                 commands_for_pot[pot_counter] = this_one_line;
                 pot_counter++;
                 i++;
@@ -121,7 +122,7 @@ void create_commands(FILE* file){
                     arguments = give_me_arguments(commands_for_pot[i], path);
 
                     if (execvp(path, arguments) == -1){
-                        printf("error, cant piping, sorry\n");
+//                        printf("error, cant piping, sorry\n");
                         exit(1);
                     }
                 } else {
