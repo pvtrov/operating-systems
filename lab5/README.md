@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/74711051/163272817-e331a16c-c8d2-405c-91b5-662b001b4be6.png)
+
+
 ###  imo laby nieprzyjemne i upierdliwe, w sam raz jeśli chcesz sobie przypomnieć dlaczego nienawidzisz tych studiów i swojego życia 
 
 # Potoki nazwane i nienazwane
